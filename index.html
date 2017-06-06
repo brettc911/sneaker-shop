@@ -2,53 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
     <title>Sneaker Store</title>
   </head>
   <body>
     <header>
-      <img src="images/logo.jpg" alt="logo">
       <nav class="primary-nav">
+        <img id="logo" src="images/logo.jpg" alt="logo">
         <ul>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Boys</a></li>
           <li><a href="#">Girls</a></li>
           <li><a href="#">Customize</a></li>
-
         </ul>
       </nav>
       <nav class="secondary-nav">
         <ul>
           <li><a href="#">Help</a></li>
           <li><a href="#">My Account</a></li>
-          <li><a href="#">&#9632 Shopping Cart</a></li>
+          <li><a href="#">Shopping Cart</a></li>
         </ul>
       </nav>
     </header>
-    <section class="hero-top-border">
     </section>
+    <section class="top-border"></section>
     <section class="hero">
+      <div id="modalWrapper">
+        <span>Item added to cart!</span>
+        <button id="ok">Ok!</button>
+      </div>
       <div class="hero-image">
-        <a href="#">&#8592 Back to all Shoes</a>
+        <span href="#">&#8592 Back to all Shoes</span>
         <img src="images/shoe1.png" alt="hero-image">
       </div>
       <div class="hero-content">
         <h1>Quick Sneakers</h1>
         <h2>Spring/Summer 2017</h2>
-        <p>Lorem ipsum dolor sit  ad minim veniastrud eo laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <a href="#">Read The Reviews</a>
-        <h3>$120.00</h3>
-        <button class="buy-now" type="button">Buy Now!</button>
+        <p>Lorem ipsum dolor it  ad minim venias sit  ad minim veniastrud eo laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#">Read The Reviews</a></p>
+        <h3><sup>$</sup>120<sup>00</sup></h3>
+        <button id="buy-now">Buy Now!</button>
       </div>
     </section>
+
+
     <section class="middle">
       <nav class="tirtiary-nav">
         <ul>
           <li><a href="#">Product Details</a></li>
-          <li2><a href="#">Size & Fit</a></li2>
-          <li3><a href="#">Reviews &#9733&#9733&#9733&#9733&#9734</a><li3>
+          <li><a href="#">Size & Fit</a></li>
+          <li class="last"><a href="#">Reviews &#9733&#9733&#9733&#9733&#9734</a><li>
         </ul>
       </nav>
       <div class="details">
@@ -62,29 +67,34 @@
         <p>Don't take our word for it! Read what our customers have been saying about this product. We guarantee you won't be disappointed in your purchase.</p>
       </div>
     </section>
+
+
     <section class="shop">
-      <h1>Shope Recomended Shoes</h1>
+      <span>Shop Recomended Shoes</span>
     </section>
     <section class="footer-shoes">
       <div class="funny">
         <img src="images/shoe2.png" alt="funny">
         <h1>Funny Sneakers</h1>
-        <p>$120.00</p>
+        <p><sup>$</sup>120<sup>00</sup></p>
+        <span>SPRING/SUMMER 2017</span>
       </div>
       <div class="nimble">
         <img src="images/shoe3.png" alt="nimble">
         <h1>Nimble Sneakers</h1>
-        <p>$120.00</p>
+        <p><sup>$</sup>120<sup>00</sup></p>
+        <span>SPRING/SUMMER 2017</span>
       </div>
       <div class="cute">
         <img src="images/shoe4.png" alt="cute">
         <h1>Cute Sneakers</h1>
-        <p>$120.00</p>
+        <p><sup>$</sup>120<sup>00</sup></p>
+        <span>SPRING/SUMMER 2017</span>
       </div>
     </section>
     <footer>
-      <img src="images/logo.jpg" alt="logo">
       <nav class="footer-nav">
+        <img src="images/logo.jpg" alt="logo">
         <ul>
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
@@ -96,10 +106,11 @@
       <nav class="footer2-nav">
         <ul>
           <li><a href="#">Shipping </a></li>
-          <li><a href="#">| Terms & Condistions |</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
           <li>Copyright 2017. Sneaker Shop, LLC.</li>
         </ul>
       </nav>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
